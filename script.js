@@ -19,13 +19,7 @@ anime({
 //Today Top gifter
 
 const account1 = {
-  movements: [
-    0,
-    'divineemperas:2300',
-    'kingbigcountry:1700',
-    'unique:1300',
-    'anisha:100',
-  ],
+  movements: [0, '@mcalpinez:2500'],
 };
 
 // All time top gifter
@@ -38,9 +32,11 @@ const account2 = {
     'mickaylagraf5:59300',
     'matthewb158:40500',
     'tiere_von_uns: 28000',
-    't_roxy45:18500',
     'muliganbeauty:  25000',
+    't_roxy45:21800',
     '@italiasian: 17800',
+    '@kimberly.51.p:15000',
+
     '@kristee_anna22:  15000',
 
     'twinmiracles:12000',
@@ -48,6 +44,7 @@ const account2 = {
 
     'sue652002:8000',
     'jasminearely:7600',
+    'kingkoopa11:7400',
     'starbrust_107: 7200',
     'brandonlol28: 6600',
     'missnala31:6100',
@@ -56,11 +53,12 @@ const account2 = {
     'fnfmusic345:5000',
     'mikki_b72:5000',
     'jmrsp:4500',
+    '@kadyaddison:4200',
     'mr._bling:4100',
     'jagga2244:4003',
     'kimberlygrace777:4000',
     'goldstartfamily:4000',
-
+    '@jeremiahatro:3900',
     'loveleen_army:3600',
     'gon___1:3500',
     'batg4rl: 3400',
@@ -114,3 +112,24 @@ function display_array2() {
   }
   document.getElementById('Result2').innerHTML = ee;
 }
+
+// display google map
+
+const map = function () {
+  const map = document.getElementById('map');
+  if (map) {
+    map.style.height = '500px';
+    map.style.width = '100%';
+    const mapOptions = {
+      zoom: 15,
+      center: { lat: 35.907757, lng: -79.0558 },
+      disableDefaultUI: true,
+    };
+    const map = new google.maps.Map(map, mapOptions);
+    const marker = new google.maps.Marker({
+      position: { lat: 35.907757, lng: -79.0558 },
+      map: map,
+      title: 'Hello World!',
+    });
+  }
+};
