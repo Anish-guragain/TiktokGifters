@@ -19,7 +19,12 @@ anime({
 //Today Top gifter
 
 const account1 = {
-  movements: [0, '@mcalpinez:2500'],
+  movements: [
+    0,
+    'trauma:5100',
+    
+    
+  ],
 };
 
 // All time top gifter
@@ -29,13 +34,15 @@ const account2 = {
     0,
     // 'dania_hassam: unlimited',
     // 'editz_forme23: 35000',
+    '@kimberly.51.p:70000',
     'mickaylagraf5:59300',
     'matthewb158:40500',
     'tiere_von_uns: 28000',
     'muliganbeauty:  25000',
+    'vernovilla1:24400',
     't_roxy45:21800',
+    'edits_alt4:18000',
     '@italiasian: 17800',
-    '@kimberly.51.p:15000',
 
     '@kristee_anna22:  15000',
 
@@ -43,6 +50,7 @@ const account2 = {
     'benyoub: 10000',
 
     'sue652002:8000',
+    'therealjoshmendez:7900',
     'jasminearely:7600',
     'kingkoopa11:7400',
     'starbrust_107: 7200',
@@ -52,6 +60,7 @@ const account2 = {
     'terrie.rains:5000',
     'fnfmusic345:5000',
     'mikki_b72:5000',
+    'tonyroberts194:4600',
     'jmrsp:4500',
     '@kadyaddison:4200',
     'mr._bling:4100',
@@ -60,6 +69,7 @@ const account2 = {
     'goldstartfamily:4000',
     '@jeremiahatro:3900',
     'loveleen_army:3600',
+    'kazz61971:3000 ',
     'gon___1:3500',
     'batg4rl: 3400',
     'miamia_jelouspotato:3000',
@@ -113,23 +123,20 @@ function display_array2() {
   document.getElementById('Result2').innerHTML = ee;
 }
 
-// display google map
-
-const map = function () {
-  const map = document.getElementById('map');
-  if (map) {
-    map.style.height = '500px';
-    map.style.width = '100%';
-    const mapOptions = {
-      zoom: 15,
-      center: { lat: 35.907757, lng: -79.0558 },
-      disableDefaultUI: true,
-    };
-    const map = new google.maps.Map(map, mapOptions);
-    const marker = new google.maps.Marker({
-      position: { lat: 35.907757, lng: -79.0558 },
-      map: map,
-      title: 'Hello World!',
-    });
-  }
-};
+// VANTA.BIRDS({
+//   el: 'body',
+//   mouseControls: true,
+//   touchControls: true,
+//   gyroControls: false,
+//   minHeight: 200.0,
+//   minWidth: 200.0,
+//   scale: 1.0,
+//   scaleMobile: 1.0,
+//   birdSize: 1.9,
+//   wingSpan: 13.0,
+//   speedLimit: 8.0,
+//   separation: 100.0,
+//   alignment: 1.0,
+//   cohesion: 25.0,
+//   quantity: 4.0,
+// });
