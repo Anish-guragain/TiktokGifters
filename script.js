@@ -20,7 +20,7 @@ anime({
 
 const account1 = {
   movements: [
-    0,
+    
     'trauma:5100',
     
     
@@ -31,7 +31,7 @@ const account1 = {
 
 const account2 = {
   movements: [
-    0,
+  
     // 'dania_hassam: unlimited',
     // 'editz_forme23: 35000',
     '@kimberly.51.p:70000',
@@ -85,58 +85,28 @@ const account2 = {
   ],
 };
 
-var x = 0;
-var array;
+  
+  const displaydiv=document.getElementById('Result')
 
-function add_element_to_array() {
-  array = account1.movements;
-  x++;
-  document.getElementById('button1').value = '';
-}
-
-function display_array() {
-  var e = '';
-
-  for (var y = 1; y < array.length; y++) {
-    e += y + ' : ' + array[y] + '<br/>';
+  function displayArray() {
+    let arrayContent = "";
+    // add count
+    let count = ''
+    account1.movements.forEach((item, Index) => {
+      arrayContent += `<p> ${Index + 1}:${item}</p>`;
+      console.log(item);
+    });
+    displaydiv.innerHTML = arrayContent;
   }
-  document.getElementById('Result').innerHTML = e;
-}
 
-///////////////////////////////
-
-var xa = 0;
-var array2;
-
-function add_element_to_array2() {
-  array2 = account2.movements;
-  xa++;
-  document.getElementById('button2').value = '';
-}
-
-function display_array2() {
-  var ee = '';
-
-  for (var y = 1; y < array2.length; y++) {
-    ee += y + ' : ' + array2[y] + '<br/>';
+  const displaydiv2=document.getElementById('Result2')
+  function displayArray2() {
+    let arrayContent = "";
+    // add count
+    let count = ''
+    account2.movements.forEach((item, Index) => {
+      arrayContent += `<p> ${Index + 1}:${item}</p>`;
+      console.log(item);
+    });
+    displaydiv2.innerHTML = arrayContent;
   }
-  document.getElementById('Result2').innerHTML = ee;
-}
-
-// VANTA.BIRDS({
-//   el: 'body',
-//   mouseControls: true,
-//   touchControls: true,
-//   gyroControls: false,
-//   minHeight: 200.0,
-//   minWidth: 200.0,
-//   scale: 1.0,
-//   scaleMobile: 1.0,
-//   birdSize: 1.9,
-//   wingSpan: 13.0,
-//   speedLimit: 8.0,
-//   separation: 100.0,
-//   alignment: 1.0,
-//   cohesion: 25.0,
-//   quantity: 4.0,
-// });
